@@ -4,11 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> <%=title%> </title>
+  <%- include('partials/head') %>
 </head>
 <body>
   <%- include('partials/navigation') %>
 
-  <h1>Hello World</h1>
+  <!-- Main Content -->
+  <header class="h-screen mx-auto flex flex-col justify-center items-center mt-4">
+    <img src="/img/reactLogo.webp" alt="React" class="h-32">
+    <h1 class="text-4xl mt-5">
+      Carlos-Dev
+    </h1>
+    <a href="/about" class="bg-blue-500 px-5 py-3 rounded-md mt-5">
+      About
+    </a>
+  </header>
 
   <%- include('partials/footer') %>
 </body>
